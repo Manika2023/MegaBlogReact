@@ -3,7 +3,6 @@ import { Editor } from '@tinymce/tinymce-react'
 import { Controller } from 'react-hook-form'
 import conf from '../conf/conf'
 
-const tinyMCE = String(import.meta.env.VITE_TINYMCE_API_KEY)
 
 // control-> component se form me le jane ke liye
 export default function RTE({name,control,label, defaultValue=""}) {
