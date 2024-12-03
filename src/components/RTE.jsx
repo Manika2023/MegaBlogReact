@@ -3,6 +3,7 @@ import { Editor } from '@tinymce/tinymce-react'
 import { Controller } from 'react-hook-form'
 import conf from '../conf/conf'
 
+const MyRTEkEY="0gjjm7w7k7nk0k66p7fwmt1sr7kpkk0p64nsl2zm22l55tqk"
 
 // control-> component se form me le jane ke liye
 export default function RTE({name,control,label, defaultValue=""}) {
@@ -18,7 +19,7 @@ export default function RTE({name,control,label, defaultValue=""}) {
     render={({field: {onChange}}) => (
      // jo bhi field lana hai like editor and input
         <Editor
-        apiKey = "0gjjm7w7k7nk0k66p7fwmt1sr7kpkk0p64nsl2zm22l55tqk"
+        apiKey='0gjjm7w7k7nk0k66p7fwmt1sr7kpkk0p64nsl2zm22l55tqk'
         initialValue={defaultValue}
         init={{
             initialValue: defaultValue,
