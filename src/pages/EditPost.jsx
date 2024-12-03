@@ -13,7 +13,7 @@ export default function EditPost() {
           if (slug) {
               appwriteService.getPost(slug).then((post) => {
                   if (post) {
-                      console.log("Fetched Post:", post); // Debug: Log post data
+                      console.log("Fetched Post:", post.content); // Debug: Log post data
                       setPosts(post);
                   } else navigate("/");
               });
