@@ -125,8 +125,8 @@ export default function PostForm({ post }) {
           label="Content: "
           name="content"
           control={control}
-          // defaultValue={getValues("content")}
-          defaultValue={post?.content || ""} // Safeguard against undefined
+          defaultValue={getValues("content")}
+          // defaultValue={post?.content || ""} // Safeguard against undefined
         />
       </div>
 
