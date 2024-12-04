@@ -26,6 +26,7 @@ export default function PostForm({ post }) {
       setValue("title", post.title || "");
       setValue("slug", post.$id || "");
       setValue("content", post.content || "");
+      // setValue("content", post.content || "");
       setValue("status", post.status || "active");
     }
   }, [post, setValue]);
