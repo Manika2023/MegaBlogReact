@@ -23,7 +23,6 @@ export default function PostForm({ post }) {
   // Populate the form when `post` prop is provided
   React.useEffect(() => {
     if (post) {
-      console.log("Setting form values with post data:", post);
       setValue("title", post.title || "");
       setValue("slug", post.$id || "");
       setValue("content", post.content || "");
@@ -126,7 +125,7 @@ export default function PostForm({ post }) {
           name="content"
           control={control}
           defaultValue={getValues("content")}
-          // defaultValue={post?.content || ""} // Safeguard against undefined
+          //  defaultValue={post?.content || ""} // Safeguard against undefined
         />
       </div>
 
