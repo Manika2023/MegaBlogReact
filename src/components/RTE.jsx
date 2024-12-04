@@ -52,11 +52,7 @@ export default function RTE({name,control,label, defaultValue=""}) {
             "undo redo | blocks | image | bold italic forecolor | alignleft aligncenter bold italic forecolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent |removeformat | help",
             content_style: "body { font-family:Helvetica,Arial,sans-serif; font-size:14px }"
         }}
-        onEditorChange={(newValue) => {
-          onChange(newValue)
-          console.log("new value is: ",newValue);
-        }
-        } // Update React Hook Form
+        onEditorChange={(newValue) =>  onChange(newValue) } // Update React Hook Form
         // it will not work in development environment
         // onEditorChange={onChange}
         />
