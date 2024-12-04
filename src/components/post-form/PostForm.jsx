@@ -121,7 +121,7 @@ export default function PostForm({ post }) {
           }}
         />
         <RTE
-          label="content : "
+          label="content: "
           name="content"
           control={control}
           defaultValue={getValues("content")}
